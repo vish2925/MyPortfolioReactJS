@@ -37,6 +37,19 @@
             list-style-type: none;
             margin: 0 23px;
         }
+        nav ul li a{
+            text-decoration: none;
+            color: antiquewhite;
+        }
+    nav ul li a:hover{
+        color: gold;
+    }
+    main hr{
+        border:0;
+        background: rgb(100, 93, 196);
+        height:1.3px;
+        margin:60px 80px;
+    }
         
         .left {
             font-size: 1.5rem;
@@ -45,21 +58,127 @@
         .firstSection {
             display: flex;
             justify-content: space-around;
-            margin: 23px 0;
+            margin: 70px 0;
         }
         
-        .firstSection div {
-            width: 30%;
+        .firstSection>div {
+            width: 40%;
         }
         
         .leftSection {
-            background-color: brown;
-            width: 34px;
+            margin: 0 0;
+            font-size: 2.5rem;
+            align-items: center;
+            background-image: url(tumblr_static_tumblr_static__focused_v3.gif);
+        }
+        .leftSection .buttons{
+            padding: 10px 30px;
+        }
+        .leftSection .btn{
+                padding: 12px;
+                color: rgb(249, 225, 225);
+                background: rgba(145, 145, 155, 0.918);
+                border: 5px solid whitesmoke;
+                border-radius: 6px;
+                font-size: 20px;
+                cursor: pointer;
         }
         
         .rightSection {
             /* background-color: brown; */
             width: 34px;
+        }
+        
+        .rightSection img {
+            width: 100%;
+            height:99.5%;
+            margin: 0 0;
+        }
+        
+        .purple {
+            justify-content: center;
+            color: rgb(243, 9, 204);
+        }
+        #element{
+            color: lavender;
+        }
+        .secondSection{
+            max-width: 80vw;
+            height: 80vw;
+            width: 80vw;
+            margin: auto;
+        }
+        #d2{
+            align-items: center;
+            color:  rgb(243, 9, 204);
+        }
+        .secondSection h1{
+            font-size: 2rem;
+        }
+        .text-gray{
+            color: gray;
+        }
+        .secondSection .box{
+            background: whitesmoke;
+            width: 80vw;
+            height: 2px;
+            margin: 100px 0 0 0;
+            display: flex;
+
+        }
+        .secondSection .vertical{
+            height: 100px;
+            width: 1px;
+            background-color: antiquewhite;
+            margin: 0 125px;
+        }
+        .image-top{
+            width: 30px;
+            height: 40px;
+            position: relative;
+            top: -50px;
+            /* left: -9px; */
+        }
+        .vertical-title{
+            position:relative;
+            top: 100px;
+            width: 215px;
+
+        }
+        .vertical-desc{
+            position: relative;
+            top: 110px;
+            color: rgba(173, 177, 180, 0.909);
+            width: 225px;
+            font-size: 12px;
+
+        }
+        footer{
+            background-color: rgb(9, 11, 37)
+            
+
+        }
+        .footer{
+            display:flex;
+            padding: 30px 100px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        footer ul li{
+            color: whitesmoke;
+        }
+        .footer ul li :hover{
+        color: gold;
+    }
+        .footer > div{
+            width: 220px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: antiquewhite;
+            padding:12px 0;
         }
     </style>
 </head>
@@ -70,29 +189,101 @@
             <div class="left">Vishesh's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="heheboii">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="https://github.com/vish2925">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <section class="firstSection">
-            <div class="leftSection">Hey there, I am Vishesh
-                <div>I am a kinda kinda Developer</div>
+            <div class="leftSection">Hey there, I am <span class="purple">Vishesh </span>
+                <div>aka <span id="d2">aka</span> </div>
+                <div>Thriving as a competent :</div>
+                
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="https://drive.google.com/file/d/1PBm1fSiyBVTTp3jE-r_Ah34SYtXAnchv/view?usp=sharing">Download Resume/CV</a></button>
+                    <button class="btn"><a href="https://www.linkedin.com/in/vishesh-raina-5bb012228">Linked Profile</a></button>
+                </div>
             </div>
             <div class="rightSection">
-                <img src="bg2.jpg" alt style="
-                    width:80%;
-                    margin: 50px 0; ">
+                <img src="68747470733a2f2f6d656469612e74656e6f722e636f6d2f336254785a34486472797341414141642f706978656c732d6e656f6e2e676966.gif" alt>
             </div>
         </section>
-    </main>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I've done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="php.png" alt="">
+                    <div class="vertical-title">
+                        PHP DEVELOPER (2022-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Created a website for college registration and login, used by students to register for particular courses and then login to their respective credentials.
+                    </div>
+                </div>
+                <div class="vertical"> <img class="image-top" src="js.png" alt="">
+                    <div class="vertical-title">
+                        JS DEVELOPER (2023-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Created multiple small scale projects using different frameworks including REACT.JS for Front-End and Node.JS for backend.
+                    </div></div>
+                <div class="vertical"><img class="image-top" src="flutter.png" alt="">
+                    <div class="vertical-title">
+                        Flutter Application Developer (2022-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Designed an app for weather forecast and reporting using GoogleMaps API.
+                    </div></div>
+                <div class="vertical"><img class="image-top" src="open.webp" alt="">
+                    <div class="vertical-title">
+                        ML/AI Professional (2023-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Used various libraries, algorithms and frameworks to develop and train models, including Whisper.ai for Natural Language Processing, OpenCV & PyCharm for Object Detection and many more.
+                    </div></div>    
+            </div>
+        </section>
+    </main> 
+    <footer>
+        <div class="footer">
+            <div class="footer-first">Vishesh's Developer Portfolio</div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Social Handles</a></li>
+                    <li><a href="/">More</a></li>
+                </ul>
+            </div>
+            </ul></div>
+            <div class="footer-rights">
+                Copyright &#169;  www.vish2925portfolio.com || All Rights Reserved 
+            </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.', 'Competitive Coder.', 'ML/AI Enthusiast.','Content Writer.','Freelancer.','Website Designer.','Aspiring Comedian.'],
+          typeSpeed: 100,
+        });
+      </script>
+      <script>
+        var typed = new Typed('#d2', {
+          strings: ['@vish2925'],
+          typeSpeed: 100,
+        });
+      </script>
 </body>
 
-<body></body>
+
 
 </html>
